@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -al $(pwd) $(pwd)/.. /boot
+find $(pwd) $(pwd)/.. /boot -maxdepth 1 -exec ls -al {} \
